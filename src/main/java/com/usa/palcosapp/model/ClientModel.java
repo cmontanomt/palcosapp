@@ -19,8 +19,8 @@ public class ClientModel {
     private Integer idClient;
     private String email;
     private String password;
-    private Integer age;
     public String name;
+    private Integer age;
 
     @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "client")
     @JsonIgnoreProperties("client")
